@@ -8,7 +8,7 @@ public class NavegateTo {
 
     public static Performable paginaPrincipal(){
         return Task.where("{0} abre la pagina principal de Pet Store",
-                Open.browserOn().the(PaginaPrincipal.class)
+                Open.browserOn().the(MainPageNav.class)
         );
     }
 }

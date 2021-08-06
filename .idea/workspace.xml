@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d075510a-7725-4fa8-940b-97f88794fb7f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iu/MainPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tareas/SuccessSearchTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iu/FormularioPaginaPrincipal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/navegacion/NavegateTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/navegacion/NavegateTo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/navegacion/PaginaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/navegacion/MainPageNav.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tareas/IniciarSesionTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tareas/IniciarSesionTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/definicionpasos/SuccessSearchSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/definicionpasos/SuccessSearchSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,6 +1,6 @@
 package tareas;
 
-import iu.FormularioPaginaPrincipal;
+import iu.MainPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -24,10 +24,10 @@ public class IniciarSesionTask implements Task {
         //4- Click en login
 
         actor.attemptsTo(
-                Click.on(FormularioPaginaPrincipal.BTN_SIGN_IN),
-                Enter.theValue(this.username).into(FormularioPaginaPrincipal.TXT_USERNAME),
-                Enter.theValue(this.password).into(FormularioPaginaPrincipal.TXT_PASSWORD),
-                Click.on(FormularioPaginaPrincipal.BTN_LOGIN)
+                Click.on(MainPage.BTN_SIGN_IN),
+                Enter.theValue(this.username).into(MainPage.TXT_USERNAME),
+                Enter.theValue(this.password).into(MainPage.TXT_PASSWORD),
+                Click.on(MainPage.BTN_LOGIN)
         );
     }
 }
