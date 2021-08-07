@@ -1,0 +1,97 @@
+Index: src/main/java/tareas/IniciarSesionTask.java
+===================================================================
+diff --git a/src/main/java/tareas/IniciarSesionTask.java b/src/main/java/tareas/IniciarSesionTask.java
+deleted file mode 100644
+--- a/src/main/java/tareas/IniciarSesionTask.java	
++++ /dev/null	
+@@ -1,33 +0,0 @@
+-package tareas;
+-
+-import iu.MainPage;
+-import net.serenitybdd.screenplay.Actor;
+-import net.serenitybdd.screenplay.Task;
+-import net.serenitybdd.screenplay.actions.Click;
+-import net.serenitybdd.screenplay.actions.Enter;
+-
+-public class IniciarSesionTask implements Task {
+-    private String username;
+-    private String password;
+-
+-    public IniciarSesionTask(String username, String password) {
+-        this.username = username;
+-        this.password = password;
+-    }
+-
+-    @Override
+-    public <T extends Actor> void performAs(T actor) {
+-        //Acciones necesarias para iniciar sesion
+-        //1- Ir al formulario de login
+-        //2- Ingresar el usuario
+-        //3- Ingresar el password
+-        //4- Click en login
+-
+-        actor.attemptsTo(
+-                Click.on(MainPage.BTN_SIGN_IN),
+-                Enter.theValue(this.username).into(MainPage.TXT_USERNAME),
+-                Enter.theValue(this.password).into(MainPage.TXT_PASSWORD),
+-                Click.on(MainPage.BTN_LOGIN)
+-        );
+-    }
+-}
+Index: src/test/java/definicionpasos/IniciarSesionSteps.java
+===================================================================
+diff --git a/src/test/java/definicionpasos/IniciarSesionSteps.java b/src/test/java/definicionpasos/IniciarSesionSteps.java
+deleted file mode 100644
+--- a/src/test/java/definicionpasos/IniciarSesionSteps.java	
++++ /dev/null	
+@@ -1,33 +0,0 @@
+-package definicionpasos;
+-
+-import io.cucumber.java.es.*;
+-import navegacion.NavegateTo;
+-import net.serenitybdd.screenplay.actors.OnStage;
+-import net.serenitybdd.screenplay.actors.OnlineCast;
+-import tareas.IniciarSesionTask;
+-
+-public class IniciarSesionSteps {
+-
+-    private String nombre_actor = "Pepito";
+-
+-
+-    @Dado("en la pagina principal")
+-    public void en_la_pagina_principal() {
+-        OnStage.setTheStage(new OnlineCast());
+-
+-        OnStage.theActorCalled(this.nombre_actor).attemptsTo(
+-                NavegateTo.paginaPrincipal()
+-        );
+-    }
+-
+-    @Cuando("inicio sesion con los valores {string} y {string}")
+-    public void inicio_sesion_con_los_valores_y(String usuario, String password) {
+-        OnStage.theActor(this.nombre_actor).attemptsTo(
+-                new IniciarSesionTask(usuario, password)
+-        );
+-    }
+-
+-    @Entonces("ingrese correctamente a mi usuario")
+-    public void ingrese_correctamente_a_mi_usuario() {
+-    }
+-}
+Index: src/test/resources/features/IniciarSesion.feature
+===================================================================
+diff --git a/src/test/resources/features/IniciarSesion.feature b/src/test/resources/features/IniciarSesion.feature
+deleted file mode 100644
+--- a/src/test/resources/features/IniciarSesion.feature	
++++ /dev/null	
+@@ -1,9 +0,0 @@
+-#language:es
+-  Característica: Funcionalidad de Iniciar Sesion
+-    Como usuario deseo por loguearme en la pagina para realizar compras de mascotas
+-
+-
+-  Escenario: Inicio de sesion exitoso
+-    Dado en la pagina principal
+-    Cuando inicio sesion con los valores "testserenity" y "123456"
+-    Entonces ingrese correctamente a mi usuario
+\ No newline at end of file

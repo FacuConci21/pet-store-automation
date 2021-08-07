@@ -4,8 +4,11 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.cucumber.java.es.*;
 import navegacion.NavegateTo;
+import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
+import org.hamcrest.core.StringContains;
+import question.LoginFormQuestion;
 import tareas.LoginTask;
 
 public class LoginSteps {
@@ -29,5 +32,11 @@ public class LoginSteps {
 
     @Then("the login fails")
     public void the_login_fails() {
+        OnStage.theActorInTheSpotlight().should(
+                GivenWhenThen.seeThat(" Signon failed.",
+                        LoginFormQuestion.singInFailed(),
+                        StringContains.containsString(" Signon failed.")
+                        )
+        );
     }
 }

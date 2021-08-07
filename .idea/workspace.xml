@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d075510a-7725-4fa8-940b-97f88794fb7f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/iu/LoginForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/definicionpasos/LoginSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/question/LoginFormQuestion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/iu/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iu/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/navegacion/MainPageNav.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/navegacion/MainPageNav.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tareas/IniciarSesionTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tareas/LoginTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iu/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iu/LoginForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/definicionpasos/IniciarSesionSteps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/IniciarSesion.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/definicionpasos/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/definicionpasos/LoginSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,12 +19,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1vaI64s01aAlvMtg81AyO2Hmgfx" />
@@ -83,6 +84,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestRunner (1)" />
+        <item itemvalue="JUnit.TestRunner" />
         <item itemvalue="JUnit.TestRunner (1)" />
         <item itemvalue="JUnit.TestRunner" />
       </list>

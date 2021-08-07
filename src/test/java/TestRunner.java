@@ -5,7 +5,7 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         features = "src/test/resources/features",
-        tags = {"@FailLogin"}
+        tags = {"@SuccessSearch", "@FailLogin"}
 )
 public class TestRunner {
 }

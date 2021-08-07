@@ -10,8 +10,13 @@ public interface LoginForm {
             .locatedBy("//input[@name='password']");
     Target INPUT_SUBMIT_LOGIN = Target.the("Login button")
             .locatedBy("//input[@name='signon']");
-
+    Target LI_LABEL = Target.the("Sign on fail label")
+            .locatedBy("//li[contains(text(),'Signon failed.')]");
     /*
+
+    Target  = Target.the("").locatedBy("");
+    Target  = Target.the("").locatedBy("");
+    Target  = Target.the("").locatedBy("");
     Target  = Target.the("").locatedBy("");
     */
 }
