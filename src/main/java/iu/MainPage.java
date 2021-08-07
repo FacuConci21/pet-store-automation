@@ -13,4 +13,6 @@ public interface MainPage {
     Target INPUT_SUBMIT_SEARCH = Target.the("Search button")
             .locatedBy("//input[@name='searchProducts']");
 
+    Target LBL_FISH =Target.the("Label de Fish")
+            .locatedBy("//img[@src='../images/fish_icon.gif']");
 }

@@ -5,11 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d075510a-7725-4fa8-940b-97f88794fb7f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/question/LoginFormQuestion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iu/FishCatalog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iu/ShoppingCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/navegacion/LoginPageNav.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/navegacion/NavigateTo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tareas/BuyFishTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/definicionpasos/BuyFishSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/BuyFish.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/iu/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iu/LoginForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iu/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iu/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/navegacion/MainPageNav.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/navegacion/MainPageNav.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/navegacion/NavegateTo.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/definicionpasos/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/definicionpasos/LoginSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/definicionpasos/SuccessSearchSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/definicionpasos/SuccessSearchSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +74,63 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Feature: BuyFish" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="4.5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/BuyFish.feature" />
+      <option name="GLUE" value="net.serenitybdd.cucumber.actors" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="pet_store" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: BuyFish" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="4.5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
+      <option name="GLUE" value="net.serenitybdd.cucumber.actors definicionpasos" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="pet_store" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: Login" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: SuccessSearch" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="4.5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/SuccessSearch.feature" />
+      <option name="GLUE" value="net.serenitybdd.cucumber.actors definicionpasos" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="pet_store" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: SuccessSearch" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestRunner (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pet_store" />
       <option name="PACKAGE_NAME" value="" />
@@ -85,8 +152,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TestRunner (1)" />
-        <item itemvalue="JUnit.TestRunner" />
-        <item itemvalue="JUnit.TestRunner (1)" />
+        <item itemvalue="Cucumber Java.Feature: SuccessSearch" />
+        <item itemvalue="Cucumber Java.Feature: BuyFish" />
+        <item itemvalue="Cucumber Java.Feature: Login" />
         <item itemvalue="JUnit.TestRunner" />
       </list>
     </recent_temporary>

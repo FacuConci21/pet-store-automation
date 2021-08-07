@@ -3,7 +3,7 @@ package definicionpasos;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.cucumber.java.es.*;
-import navegacion.NavegateTo;
+import navegacion.NavigateTo;
 import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
@@ -19,7 +19,7 @@ public class LoginSteps {
     public void en_la_pagina_principal() {
         OnStage.setTheStage(new OnlineCast());
         OnStage.theActorCalled(this.actorName).attemptsTo(
-                NavegateTo.paginaPrincipal()
+                NavigateTo.mainPage()
         );
     }
 
