@@ -5,20 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d075510a-7725-4fa8-940b-97f88794fb7f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/iu/FishCatalog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/iu/ShoppingCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/navegacion/LoginPageNav.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/navegacion/NavigateTo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tareas/BuyFishTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/definicionpasos/BuyFishSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/BuyFish.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_8_2021_21_49__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_8_2021_21_49__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_8_2021_21_49__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_8_2021_21_49__Default_Changelist_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/iu/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iu/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/navegacion/MainPageNav.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/navegacion/MainPageNav.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/navegacion/NavegateTo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/iu/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iu/LoginForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tareas/LoginTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tareas/LoginTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/definicionpasos/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/definicionpasos/LoginSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/definicionpasos/SuccessSearchSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/definicionpasos/SuccessSearchSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

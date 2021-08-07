@@ -1,5 +1,6 @@
 package definicionpasos;
 
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.cucumber.java.es.*;
@@ -15,18 +16,19 @@ public class LoginSteps {
 
     private String actorName = "Sheldon";
 
-    @Dado("en la pagina principal")
-    public void en_la_pagina_principal() {
+    @Given("on the main page for login")
+    public void on_the_main_page_for_login() {
         OnStage.setTheStage(new OnlineCast());
+
         OnStage.theActorCalled(this.actorName).attemptsTo(
-                NavigateTo.mainPage()
+                NavigateTo.signInPage()
         );
     }
 
     @When("a user enters the values {string} y {string}")
     public void a_user_enters_the_values_y(String username, String password) {
-        OnStage.theActorCalled(this.actorName).attemptsTo(
-                new LoginTask(username, password)
+        OnStage.theActor(this.actorName).attemptsTo(
+                LoginTask.with(username, password)
         );
     }
 
@@ -36,7 +38,7 @@ public class LoginSteps {
                 GivenWhenThen.seeThat(" Signon failed.",
                         LoginFormQuestion.singInFailed(),
                         StringContains.containsString(" Signon failed.")
-                        )
+                )
         );
     }
 }
