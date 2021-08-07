@@ -1,0 +1,77 @@
+Index: src/main/java/iu/MainPage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package iu;\r\n\r\nimport net.serenitybdd.screenplay.targets.Target;\r\n\r\npublic interface MainPage {\r\n\r\n    Target BTN_SIGN_IN = Target.the(\"Boton para ir al formulario de iniciar sesion\")\r\n            .locatedBy(\"//a[normalize-space()='Sign In']\");\r\n\r\n    Target TXT_USERNAME = Target.the(\"Caja de texto para ingresar el nombre de usuario\")\r\n            .locatedBy(\"//input[@name='username']\");\r\n\r\n    Target TXT_PASSWORD = Target.the(\"Caja de texto para ingresar la contraseña\")\r\n            .locatedBy(\"//input[@name='password']\");\r\n\r\n    Target BTN_LOGIN = Target.the(\"Boton para iniciar sesion\")\r\n            .locatedBy(\"//input[@name='signon']\");\r\n\r\n    Target INPUT_TXT_KEYWORD = Target.the(\"Search box\")\r\n            .locatedBy(\"//input[@name='keyword']\");\r\n\r\n    Target INPUT_SUBMIT_SEARCH = Target.the(\"Search button\")\r\n            .locatedBy(\"//input[@name='searchProducts']\");\r\n\r\n    /*\r\n    Target  = Target.the(\"\").locatedBy(\"\");\r\n    Target  = Target.the(\"\").locatedBy(\"\");\r\n    Target  = Target.the(\"\").locatedBy(\"\");\r\n    Target  = Target.the(\"\").locatedBy(\"\");\r\n    Target  = Target.the(\"\").locatedBy(\"\");\r\n    Target  = Target.the(\"\").locatedBy(\"\");\r\n    Target  = Target.the(\"\").locatedBy(\"\");\r\n*/\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/iu/MainPage.java b/src/main/java/iu/MainPage.java
+--- a/src/main/java/iu/MainPage.java	
++++ b/src/main/java/iu/MainPage.java	
+@@ -22,8 +22,10 @@
+     Target INPUT_SUBMIT_SEARCH = Target.the("Search button")
+             .locatedBy("//input[@name='searchProducts']");
+ 
++
++    Target DIV_CATALOG = Target.the("search catalog")
++            .locatedBy("//div[@id='Catalog']");
+     /*
+-    Target  = Target.the("").locatedBy("");
+     Target  = Target.the("").locatedBy("");
+     Target  = Target.the("").locatedBy("");
+     Target  = Target.the("").locatedBy("");
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"d075510a-7725-4fa8-940b-97f88794fb7f\" name=\"Default Changelist\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/uiDesigner.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/iu/MainPage.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/tareas/SuccessSearchTask.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/iu/FormularioPaginaPrincipal.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/navegacion/NavegateTo.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/navegacion/NavegateTo.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/navegacion/PaginaPrincipal.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/navegacion/MainPageNav.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/tareas/IniciarSesionTask.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/tareas/IniciarSesionTask.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/definicionpasos/SuccessSearchSteps.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/definicionpasos/SuccessSearchSteps.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1vaI64s01aAlvMtg81AyO2Hmgfx\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"aspect.path.notification.shown\" value=\"true\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/src/test/resources\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"preferences.pluginManager\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"D:\\Mis Cosas\\Desktop\\IES\\Clases\\Clase 2\\Clase_2\\src\\test\\resources\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"JUnit.TestRunner (1)\">\r\n    <configuration default=\"true\" type=\"ArquillianJUnit\" factoryName=\"\" nameIsGenerated=\"true\">\r\n      <option name=\"arquillianRunConfiguration\">\r\n        <value>\r\n          <option name=\"containerStateName\" value=\"\" />\r\n        </value>\r\n      </option>\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"TestRunner (1)\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"pet_store\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"TestRunner\" />\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"TestRunner\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Clase_2\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"TestRunner\" />\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"JUnit.TestRunner (1)\" />\r\n        <item itemvalue=\"JUnit.TestRunner\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"d075510a-7725-4fa8-940b-97f88794fb7f\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1626793598727</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1626793598727</updated>\r\n      <workItem from=\"1626793600004\" duration=\"616000\" />\r\n      <workItem from=\"1626811298585\" duration=\"298000\" />\r\n      <workItem from=\"1626811684194\" duration=\"7877000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -5,15 +5,11 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="d075510a-7725-4fa8-940b-97f88794fb7f" name="Default Changelist" comment="">
+-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/iu/MainPage.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/tareas/SuccessSearchTask.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/question/SearchQuestions.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/iu/FormularioPaginaPrincipal.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/navegacion/NavegateTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/navegacion/NavegateTo.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/navegacion/PaginaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/navegacion/MainPageNav.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/tareas/IniciarSesionTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tareas/IniciarSesionTask.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/definicionpasos/SuccessSearchSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/definicionpasos/SuccessSearchSteps.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/tareas/IniciarSesionTask.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/definicionpasos/IniciarSesionSteps.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/resources/features/IniciarSesion.feature" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -114,5 +110,6 @@
+         </entry>
+       </map>
+     </option>
++    <option name="oldMeFiltersMigrated" value="true" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: src/main/java/question/SearchQuestions.java
+===================================================================
+diff --git a/src/main/java/question/SearchQuestions.java b/src/main/java/question/SearchQuestions.java
+new file mode 100644
+--- /dev/null	
++++ b/src/main/java/question/SearchQuestions.java	
+@@ -0,0 +1,10 @@
++package question;
++
++import iu.MainPage;
++import net.serenitybdd.screenplay.Question;
++import net.serenitybdd.screenplay.questions.TextContent;
++
++public class SearchQuestions {
++
++
++}

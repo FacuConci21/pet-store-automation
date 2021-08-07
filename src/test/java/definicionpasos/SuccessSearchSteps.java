@@ -3,7 +3,7 @@ package definicionpasos;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import navegacion.NavegateTo;
+import navegacion.NavigateTo;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import tareas.SuccessSearchTask;
@@ -16,7 +16,7 @@ public class SuccessSearchSteps {
     public void on_the_main_page() {
         OnStage.setTheStage(new OnlineCast());
         OnStage.theActorCalled(this.actor).attemptsTo(
-                NavegateTo.paginaPrincipal()
+                NavigateTo.mainPage()
         );
     }
 
