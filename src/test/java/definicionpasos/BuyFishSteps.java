@@ -15,7 +15,6 @@ public class BuyFishSteps {
     @Given("beginning on the main page")
     public void beginning_on_the_main_page() {
         OnStage.setTheStage(new OnlineCast());
-
         OnStage.theActorCalled(this.actorName).attemptsTo(
                 NavigateTo.mainPage()
         );

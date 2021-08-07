@@ -13,7 +13,4 @@ public interface LoginForm {
     Target LI_LABEL = Target.the("Sign on fail label")
             .locatedBy("//li[contains(text(),'Signon failed.')]");
 
-    /*
-    Target  = Target.the("").locatedBy("");
-    */
 }
